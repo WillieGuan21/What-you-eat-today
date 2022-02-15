@@ -13,10 +13,18 @@ import Checkbox from "primevue/checkbox";
 import RadioButton from "primevue/radiobutton";
 import AutoComplete from "primevue/autocomplete";
 import Textarea from "primevue/textarea";
+import InputMask from "primevue/inputmask";
+import Password from "primevue/password";
+import TabMenu from "primevue/tabmenu";
+import SelectButton from "primevue/selectbutton";
 import "primevue/resources/themes/saga-blue/theme.css";
 import "primevue/resources/primevue.min.css";
 import "primeicons/primeicons.css";
 export default (app) => {
+  app.component("SelectButton", SelectButton);
+  app.component("TabMenu", TabMenu);
+  app.component("Password", Password);
+  app.component("InputMask", InputMask);
   app.component("InputText", InputText);
   app.component("InputSwitch", InputSwitch);
   app.component("Button", Button);

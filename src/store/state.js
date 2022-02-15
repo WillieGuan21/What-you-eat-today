@@ -1,3 +1,4 @@
 export default {
-  user: { name: '', id: '', token: '' },
+  user: { name: "", id: "", token: "" },
+  foods: ["willie"],
 };

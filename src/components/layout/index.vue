@@ -1,28 +1,26 @@
 <template>
   <div class="default">
-    <headerComp />
     <div class="main-container flex flex-colbg-blue-200">
       <slot />
     </div>
-    <footerComp />
   </div>
 </template>
 
 <script>
-  import { defineComponent } from 'vue'
-  import footerComp from './footer.vue'
-  import headerComp from './header.vue'
+import { defineComponent } from "vue";
+import footerComp from "./footer.vue";
+import headerComp from "./header.vue";
 
-  export default defineComponent({
-    name: 'DefaultLayout',
-    components: {
-      footerComp,
-      headerComp
-    },
-    setup() {
-      return { };
-    },
-  });
+export default defineComponent({
+  name: "DefaultLayout",
+  components: {
+    footerComp,
+    headerComp,
+  },
+  setup() {
+    return {};
+  },
+});
 </script>
 
 <style lang="scss">
