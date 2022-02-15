@@ -21,7 +21,7 @@
       </div>
 
       <Dialog
-        class="settingDialog"
+        class="settingDialog overflow-y-scroll"
         header="Set up your meals"
         v-model:visible="displayModal"
         :style="{ width: '50vw' }"
@@ -52,6 +52,7 @@
         header="Add item"
         v-model:visible="displayEdit"
         :style="{ width: '50vw' }"
+        :breakpoints="{ '960px': '80vw' }"
         :modal="true"
         :closable="false"
       >
@@ -135,8 +136,12 @@ export default {
     };
     const editConfirm = () => {
       displayEdit.value = false;
-      defaultList.value.push({ name: addWord.value });
-      addWord.value = "";
+      if (addWord.value === "") {
+        return;
+      } else {
+        defaultList.value.push({ name: addWord.value });
+        addWord.value = "";
+      }
     };
     const addWord = ref("");
 
