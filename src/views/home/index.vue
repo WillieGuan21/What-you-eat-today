@@ -190,7 +190,7 @@ export default {
 
 .containers {
   overflow-y: hidden;
-  background-image: url("../../src/assets/eat.jpg");
+  background-image: url("../../assets/eat.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
